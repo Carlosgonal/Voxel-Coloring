@@ -6,13 +6,27 @@
 //  Copyright (c) 2014 Carlos González. All rights reserved.
 //
 
-#include <iostream>
 
-int main(int argc, const char * argv[])
+#include "InterfrazGrafica.h"
+#include "Voxel Coloring.h"
+
+using namespace std;
+
+//
+// main program:
+//
+
+int main( int argc, char *argv[] )
 {
-
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    
+    //Iniciamos OpenGl y su interfaz de usuario
+	glutInit( &argc, argv );
+	InitGraphics();
+	InitLists();
+	Reset();
+	InitGlui();
+	glutMainLoop();
+	////////////////////////////////////////////
+    
+	return 0;
 }
-
